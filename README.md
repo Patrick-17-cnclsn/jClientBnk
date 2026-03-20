@@ -49,5 +49,3 @@ Le projet suit une architecture **MVC** (Modèle-Vue-Contrôleur) :
 *   `Controllers/` : Logique de contrôle pour chaque écran.
 *   `resources/Style/` : Fichiers CSS pour l'apparence.
 
----
-*Projet réalisé dans le cadre d'un portfolio BTS.*
