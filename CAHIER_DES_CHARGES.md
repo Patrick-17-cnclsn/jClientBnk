@@ -43,5 +43,3 @@ L'application utilise le pattern **MVC** (Modèle-Vue-Contrôleur) complété pa
 *   **Portabilité** : Exécution sur n'importe quelle machine disposant d'un JRE compatible.
 *   **Maintenabilité** : Code structuré et documenté (KDoc/Commentaires).
 
----
-*Date de rédaction : 20 mars 2026*
