@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="60.0" prefWidth="550.0" stylesheets="@../../Style/TransactionCell.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox layoutX="8.0" layoutY="10.0" prefHeight="40.0" prefWidth="80.0" styleClass="trans_icon_container" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="10.0">
+        <FontIcon fx:id="in_icon" iconLiteral="fas-arrow-left" iconSize="14" tabSize="7" />
+        <FontIcon fx:id="out_icon" iconLiteral="fas-arrow-right" iconSize="14" />
+    </VBox>
+    <Label fx:id="trans_date_lbl" layoutX="103.0" layoutY="23.0" styleClass="trans_date_lbl" text="2022-07-08" AnchorPane.leftAnchor="103.0" />
+    <Label fx:id="sender_lbl" layoutX="201.0" layoutY="23.0" styleClass="trans_pAddress_lbl" text="Patrick" AnchorPane.leftAnchor="200.0" />
+    <Line endY="20.0" layoutX="293.0" layoutY="20.0" AnchorPane.bottomAnchor="19.5" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="19.5" />
+    <Label fx:id="receiver_lbl" layoutX="368.0" layoutY="23.0" styleClass="trans_pAddress_lbl" text="Benjamin" AnchorPane.leftAnchor="350.0" />
+    <Label fx:id="amount_label" layoutX="480.0" layoutY="17.0" styleClass="trans_amount_lbl" text="20000" AnchorPane.rightAnchor="14.666666666666629">
+        <graphic>
+          <FontIcon iconLiteral="fas-dollar-sign" iconSize="15" />
+        </graphic>
+    </Label>
+
+</AnchorPane>

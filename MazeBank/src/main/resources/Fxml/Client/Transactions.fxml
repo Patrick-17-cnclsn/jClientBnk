@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="transactions_container"
+            stylesheets="@../../Style/Transactions.css" xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.jmc.mazebank.Controllers.Client.TransactionsController">
+    <Text layoutX="391.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transactions"
+          AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="14.0" styleClass="section_title">
+        <font>
+            <Font name="System Bold" size="24.0"/>
+        </font>
+    </Text>
+
+    <TableView fx:id="transactions_table" layoutX="14.0" layoutY="100.0" prefHeight="640.0" prefWidth="830.0"
+               AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="100.0"
+               AnchorPane.bottomAnchor="14.0" styleClass="transactions_table">
+        <columns>
+            <TableColumn fx:id="sender_col" prefWidth="150.0" text="Sender"/>
+            <TableColumn fx:id="receiver_col" prefWidth="150.0" text="Receiver"/>
+            <TableColumn fx:id="amount_col" prefWidth="120.0" text="Amount"/>
+            <TableColumn fx:id="date_col" prefWidth="150.0" text="Date"/>
+            <TableColumn fx:id="message_col" prefWidth="260.0" text="Message"/>
+        </columns>
+    </TableView>
+</AnchorPane>

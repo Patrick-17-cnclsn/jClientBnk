@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="394.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Style/Login.css"
+            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.jmc.mazebank.Controllers.LoginController">
+    <VBox layoutY="-1.0" prefHeight="394.0" prefWidth="243.0" styleClass="login_logo_container"
+          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="423.0"
+          AnchorPane.topAnchor="0.0">
+        <FontIcon iconColor="#125522" iconLiteral="fas-university" iconSize="32"
+                  styleClass="login_logo_container"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maze Bank"/>
+    </VBox>
+    <VBox layoutX="222.0" layoutY="14.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container"
+          AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="20.0"
+          AnchorPane.topAnchor="20.0">
+        <Label id="choice-prompt-text" text="Choose Your Account Type"/>
+        <ChoiceBox fx:id="acc_selector" prefWidth="150.0" styleClass="account_selector"/>
+        <Label fx:id="payee_address_lbl" text="Payee Address"/>
+        <TextField fx:id="payee_address_fld" styleClass="input_field"/>
+        <Label fx:id="password_lbl" text="Password"/>
+        <PasswordField fx:id="password_fld" styleClass="input_field"/>
+        <Button fx:id="login_btn" mnemonicParsing="false" text="Login"/>
+        <Label fx:id="error_lbl" styleClass="error_lbl"/>
+    </VBox>
+</AnchorPane>

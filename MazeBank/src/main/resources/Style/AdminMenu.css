@@ -1,0 +1,107 @@
+.main_menu_container{
+    -fx-background-color: #f7f7fa;
+    -fx-alignment: center;
+    -fx-spacing: 20;
+    -fx-padding: 0 10 0 10 ;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7), 10, 0, 0, 0);
+}
+
+/* title logo style*/
+.left_container {
+    -fx-background-color: #ffffff;
+
+}
+
+.title_container{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+.title_container Text{
+    -fx-fill: #0e0909;
+    -fx-font-size: 20px;
+}
+
+/* navigation section  style*/
+.menu_container{
+    -fx-padding: 10;
+    -fx-fill: #dbdbee;
+    -fx-spacing: 25;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7), 10, 0, 0, 0);
+}
+
+.menu_container Button{
+    -fx-pref-width: 115;
+    -fx-pref-height: 40;
+    -fx-background-color: #e3ddef;
+    -fx-background-radius: 10;
+    -fx-text-fill: #030334;
+    -fx-font-size: 15px;
+
+}
+
+.menu_container Button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #174a4b;
+}
+
+.menu_container Button FontIcon{
+    -fx-fill: #030334;
+}
+
+.alt_menu_btn{
+    -fx-pref-width: 115;
+    -fx-pref-height: 40;
+    -fx-background-color: #030334;
+    -fx-text-fill: #ffff;
+    -fx-alignment: center-left;
+}
+
+.alt_menu_btn FontIcon{
+    -fx-fill: #ffff;
+}
+
+/* report bug section style*/
+.report_container{
+    -fx-background-color: #2f5d48;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-spacing: 10;
+    -fx-padding: 10;
+    -fx-pref-width: 150;
+    -fx-max-width: 150;
+}
+
+.report_container Text{
+    -fx-font-size: 13px;
+    -fx-fill: #ffff;
+    -fx-text-alignment: center;
+    -fx-wrapping-width: 130;
+}
+
+.report_container Label{
+    -fx-text-alignment: center;
+    -fx-text-fill: #d2d2e1;
+    -fx-wrap-text: true;
+    -fx-max-width: 130;
+    -fx-font-size: 11px;
+}
+
+.report_container Button{
+    -fx-pref-width: 70;
+    -fx-background-color: #131b33;
+    -fx-text-fill: #d2d2e1;
+}
+
+.report_container Button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #212a45;
+}
+
+.report_container Button FontIcon{
+    -fx-fill: #ffff;
+}

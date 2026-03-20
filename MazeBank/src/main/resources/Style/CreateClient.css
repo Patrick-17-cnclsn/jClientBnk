@@ -1,0 +1,54 @@
+.create_client_container {
+    -fx-background-color: #eeeeee;
+}
+
+.create_client_container Text {
+    -fx-fill: #060628;
+    -fx-font-size: 15px;
+}
+
+.create_client_container VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #101010;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+
+}
+
+.create_client_container TextField {
+    -fx-background-color: #ffffff;
+    -fx-pref-width: 250;
+    -fx-pref-height: 35;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(100, 96, 96, 0.7), 10, 0, 0, 0);
+}
+
+.payee_adress_lbl {
+    -fx-pref-width: 250;
+    -fx_pref-height: 30;
+    -fx-font-family: "Calibri Light";
+    -fx-padding: 10;
+    -fx-background-color: #505050;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(100, 96, 96, 0.7), 10, 0, 0, 0);
+}
+
+.create_client_container Button {
+    -fx-font-size: 15px;
+    -fx-background-color: linear-gradient(to right, #011c0d, #1a1c1a);
+    -fx-effect: dropshadow(three-pass-box, rgba(232, 217, 217, 0), 10, 0, 0, 0);
+    -fx-text-fill: #ffffff;
+    -fx-pref-width: 150;
+    -fx-font-family: "Calibri Light";
+}
+
+.create_client_container Button:hover{
+    -fx-cursor: hand;
+}
+
+.error_lbl {
+    -fx-text-fill: #bd0f0f;
+}

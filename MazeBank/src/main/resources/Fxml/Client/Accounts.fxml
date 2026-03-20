@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="accounts_view_container"
+            stylesheets="@../../Style/Accounts.css" xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.Client.AccountsController">
+    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account"
+          AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0"/>
+    <VBox layoutX="14.0" layoutY="44.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.leftAnchor="14.0"
+          AnchorPane.topAnchor="40.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number"/>
+        <Label fx:id="ch_acc_num" text=""/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Limite"/>
+        <Label fx:id="transaction_limit" text="10"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dte Created"/>
+        <Label fx:id="ch_acc_date" text=""/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance"/>
+        <Label fx:id="ch_acc_bal" text="$0.00"/>
+    </VBox>
+    <Text layoutX="14.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saving Account"
+          AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="364.0"/>
+    <VBox layoutX="14.0" layoutY="386.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.bottomAnchor="60.0"
+          AnchorPane.leftAnchor="14.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number"/>
+        <Label fx:id="sv_acc_num" text=""/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Withdrawal Limit"/>
+        <Label fx:id="withdrawal_limit" text="$0.00"/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dte Created"/>
+        <Label fx:id="sv_acc_date" text=""/>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance"/>
+        <Label fx:id="sv_acc_bal" text="$0.00"/>
+    </VBox>
+    <Text layoutX="485.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Funds To Savings Account"
+          AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="38.0"/>
+    <TextField fx:id="amount_to_sv" layoutX="469.0" layoutY="77.0" prefHeight="25.0" prefWidth="216.0"
+               AnchorPane.rightAnchor="164.0"/>
+    <Button fx:id="trans_to_sv_btn" layoutX="551.0" layoutY="123.0" mnemonicParsing="false" prefWidth="216.0"
+            text="Transfer" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="123.0">
+        <graphic>
+            <FontIcon iconLiteral="fas-arrow-down" iconSize="16"/>
+        </graphic>
+    </Button>
+    <Text layoutX="476.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Funds To Savings Account"
+          AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="366.4000005722046"/>
+    <TextField fx:id="amount_to_ch" layoutX="464.0" layoutY="412.0" prefHeight="25.0" prefWidth="216.0"/>
+    <Button fx:id="trans_to_cv_btn" layoutX="464.0" layoutY="478.0" mnemonicParsing="false" prefWidth="216.0"
+            text="Transfer">
+        <graphic>
+          <FontIcon iconLiteral="fas-arrow-up" iconSize="16"/>
+        </graphic>
+    </Button>
+</AnchorPane>

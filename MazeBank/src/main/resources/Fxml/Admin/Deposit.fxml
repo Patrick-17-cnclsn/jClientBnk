@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<AnchorPane prefHeight="750.0" prefWidth="850.0" stylesheets="@../../Style/Deposit.css"
+            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.jmc.mazebank.Controllers.Admin.DepositController">
+    <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit to Client Account"
+          AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="20.0" styleClass="page_title">
+        <font>
+            <javafx.scene.text.Font name="System Bold" size="24.0"/>
+        </font>
+    </Text>
+    <VBox layoutX="15.0" layoutY="125.0" prefHeight="570.0" prefWidth="820.0" AnchorPane.leftAnchor="15.0"
+          AnchorPane.topAnchor="70.0">
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="820.0" styleClass="search_box">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search By payee Adress"/>
+            <TextField fx:id="pAddress_fld"/>
+            <Button fx:id="search_btn" mnemonicParsing="false" text="Search">
+                <graphic>
+                    <FontIcon iconColor="WHITE" iconLiteral="fas-search" iconSize="16"/>
+                </graphic>
+            </Button>
+        </HBox>
+        <ListView fx:id="result_listview" prefHeight="200.0" prefWidth="820.0"/>
+        <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="315.0" prefWidth="100.0" styleClass="deposit_box">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit Section"/>
+            <Label fx:id="selected_client_lbl" text="No client selected" styleClass="selected_client_label"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Amount"/>
+            <TextField fx:id="amount_fld"/>
+            <Button fx:id="deposit_btn" mnemonicParsing="false" text="Deposit">
+                <graphic>
+                    <FontIcon iconColor="#f4f3f3" iconLiteral="fas-money-bill-wave" iconSize="16"/>
+                </graphic>
+            </Button>
+        </VBox>
+    </VBox>
+</AnchorPane>
